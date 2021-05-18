@@ -1,9 +1,6 @@
-const { Blog, User, Comment } = require('../models');
-
 const router = require('express').Router();
-
-
-
+const { Blog, User, Comment } = require('../models');
+const withAuth = require('../utils/auth');
 router.get('/', async (req, res) => {
 
   const dbBlogs = await Blog.findAll({
@@ -29,6 +26,15 @@ router.get('/', async (req, res) => {
   res.render('homepage', { blogpost });
 });
 
+router.get('/login', (req, res) => {
+  // If the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('login');
+});
 
 
 module.exports = router;
