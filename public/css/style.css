@@ -1,0 +1,14 @@
+.starter{
+    background-color: grey;
+    padding-bottom: 2%;
+}
+.navbar{
+    justify-content: end;
+}
+#title{
+    display: flex;
+    position: absolute;
+}
+body{
+    background-color: yellow;
+}
