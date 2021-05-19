@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { Blog, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
-router.get('/', async (req, res) => {
+router.get('/',withAuth, async (req, res) => {
 
   const dbBlogs = await Blog.findAll({
     include: [
@@ -36,5 +36,8 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+router.get('/dash',(res,req) => {
+ res.render()
+})
 
 module.exports = router;
