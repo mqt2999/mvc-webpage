@@ -1,0 +1,7 @@
+ <h2> {{blogPost.title}} </h2>
+
+<h5> {{blogPost.content}} </h5>
+{{#each blogPost.Comments}}
+
+{{> postComments }}
+{{/each}}
