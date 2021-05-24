@@ -1,7 +1,7 @@
 const newFormHandler = async (event) => {
     event.preventDefault();
   
-    const contents = document.querySelector('#comment').value.trim();
+    const contents = document.querySelector('#comment-con').value.trim();
   
     const group_id = location.toString().split('/')[
       location.toString().split('/').length - 1
