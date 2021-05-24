@@ -1,7 +1,15 @@
- <h2> {{blogPost.title}} </h2>
-
-<h5> {{blogPost.content}} </h5>
-{{#each blogPost.Comments}}
+<div id="pp-2" class="alert alert-success" >
+  <h2 class="post-title"> {{blogPost.title}} </h2>
+  <hr id="line">
+  <h5 class='text'> {{blogPost.content}} </h5>
+  <hr id="line">
+  {{#each blogPost.Comments}}
 
 {{> postComments }}
 {{/each}}
+  <h4 class="text"> Add Comment </h4> <br>
+<textarea type="text" class="comment"></textarea> <br> <button class="btn btn-primary" id="submit" > Post </button>
+
+</div>
+
+<script src="../js/comment.js"> </script>

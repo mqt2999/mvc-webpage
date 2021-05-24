@@ -1,0 +1,24 @@
+<h1 id="user-heading"> User: {{userBlog.[0].User.userName}}'s blog post </h1>
+<a href='/post-form'> <button class="btn btn-primary" > Add Group </button></a> <br>
+{{#each userBlog}}
+{{!-- {{title}} <br>
+{{content}}<br>
+<a href='/user-post/{{id}}'> <button> Edit </button> </a> 
+ <br> --}}
+ <div class="alert alert-success" >
+  <h4 class="alert-heading">{{title}}</h4>
+  <p class=" text" id="create-stamp"> {{content}}</p>
+  <hr id="line">
+  <a href='/user-post/{{id}}'> <button class="btn btn-primary" > Edit</button> </a>
+  
+</div>
+{{/each}}
+
+{{!-- <div class="alert alert-success" >
+  <a href='/post-form'> <button > add group </button></a> <br>
+  <h4 class="alert-heading">{{title}}</h4>
+  <p class=" text" id="create-stamp"> {{content}}</p>
+  <hr id="line">
+  <a href='/user-post/{{id}}'> <button> Edit </button> </a>
+  
+</div> --}}

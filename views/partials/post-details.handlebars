@@ -1,11 +1,10 @@
-<div class="row align-center mb-5">
-  <div class="col-md-6">
-    <h2><a href="/blog-post/{{id}}"> {{title}} </a>  {{user.userName}}</h2>
-  </div>
-  <div class="col-md-6">
-    <h3>{{this.content}}</h3>
-    {{#each Comments }}
-{{> comment-details }}
-{{/each}}
-  </div>
+<div class="alert alert-success" >
+  
+  <h4 class="alert-heading"><a class="post-title" href="/blog-post/{{id}}"> {{title}} </a></h4>
+  <p class=" text" id="create-stamp"> created by {{User.userName}} on {{ format_date date_created}}</p>
+  <hr id="line">
+  <p class="mb-0 text">{{this.content}}</p>
+  
 </div>
+
+

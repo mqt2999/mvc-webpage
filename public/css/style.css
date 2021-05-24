@@ -10,8 +10,61 @@
     position: absolute;
 }
 body{
-    background-color: yellow;
+    background-color: #413f3d;
+   
 }
 #two{
     background-color: green;
+}
+#deleteButton{
+    color:red;
+}
+#post{
+    margin-left:12%;
+    margin-right:12%;
+}
+#save-btn{
+    color:green;
+}
+.alert{
+    background-color: #b1a6a4;
+    
+}
+.post-title{
+    color: black;
+}
+#create-stamp{
+    display:flex;
+}
+.text{
+    color:black;
+}
+.alert-success hr{
+    border-top-color:black;
+    
+}
+.alert-success{
+    border-color: black;
+}
+.alert-heading{
+    color:black;
+}
+#user-heading{
+    color: white
+}
+.form-control{
+    width:70%;
+    height:30px;
+}
+.edit-form{
+    margin-left:35%;
+}
+#pp-2{
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    
+}
+.comment{
+    width:50%;
 }

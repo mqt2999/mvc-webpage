@@ -7,6 +7,8 @@ const commentData = require('./commentData');
 
 
 async function createData () {
+  await sequelize.sync({ force: true });
+  
     await User.bulkCreate(userData, {
         individualHooks: true,
         returning: true,

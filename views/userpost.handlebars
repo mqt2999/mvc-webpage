@@ -1,0 +1,14 @@
+
+ <div id='pp-2' class="alert alert-success" >
+      <h1 class="text">Title </h1>
+    <input type="text" id="title-edit" value="{{user.title}}" > 
+  <hr id="line">
+    <h1 class="text"> Content </h1>
+    <textarea  class="comment" type="text" id="content-edit "> {{user.content}}</textarea> 
+    <br> 
+    <button  class="btn btn-primary" id="save-btn" >Save</button>
+  <button class="btn btn-primary" id="deleteButton" data-id="{{user.id}}"> Delete </button>
+</div>
+
+<script src="../js/deleteBlog.js"></script>
+<script src="../js/editblog.js"></script>

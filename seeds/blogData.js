@@ -10,6 +10,12 @@ module.exports = [
         title:"css",
         content:"css is how you style the page",
         user_id:1
+    },
+    {
+        id:3,
+        title:"css",
+        content:"css is how you style the page",
+        user_id:1
     }
 ]
 
