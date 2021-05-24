@@ -54,4 +54,5 @@ THEN I am automatically signed out of the site
 ![Preview](public/images/blogpage.png)
 ![Preview](public/images/dashborad.png)
 ![Preview](public/images/editblog.png)
+![Preview](public/images/loginsignup.png)
 
